@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Index</title>
+</head>
+
+<body>
+    <h2>Welcome to api services</h2>
+
+    <p>
+        name <input type="text" id="txtname">
+    </p>
+
+    <p>
+        age <input type="text" id="txtage">
+    </p>
+
+    <p>
+        <input type="button" id="btnSend" value="Send">
+    </p>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var params = {
+                "Name":"nikhil",
+                "age":30
+            }
+            $("#btnSend").click(function(){
+                $.post("http://localhost:3000/send",params, function( data ) {
+                    console.log(data); 
+                });
+
+$.post("//chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=127.0.0.1:9229/4ae768f8-3d8f-425a-927f-a603cb9407c9",params, function( data ) {
+                    console.log(data); 
+                });
+                
+            });
+        });
+    </script>
+</body>
+
+</html>

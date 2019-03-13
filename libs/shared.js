@@ -1,15 +1,24 @@
 //This module is defined as the base, that can be used while creating services
-//exports keyword is used to ensure that the functionality defined here can be accessed by other files
-var base = module.exports = {};
+
+var base = {};
 
 //Dependencies
-var express = require('express');
+var Express = require('express');
+var Http = require('http');
+var Cors = require('cors');
 
 //Custom Dependencies
-var fs = require("../libs/file-reader.js");
+base.FileSys = require("../libs/file-reader.js");
 
 //Properties
-base.Express = express();
-base.File = fs;
+base.CoinsApp = Express();
+
+//enabling CORS
+base.CoinsApp.use(Cors());
+
 //Get application settings
-base.Settings = fs.ReadJsonSync("../resources/appsettings.json");
+base.Settings = base.FileSys.ReadJsonSync("../resources/appsettings.json");
+
+
+//exports keyword is used to ensure that the functionality defined here can be accessed by other files
+module.exports = base;
