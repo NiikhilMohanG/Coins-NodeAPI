@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "coins-shared-utils",
+        "scope": null,
+        "escapedName": "coins-shared-utils",
+        "name": "coins-shared-utils",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\Lab\\project\\controllers"
+    ]
+  ],
+  "_from": "coins-shared-utils@latest",
+  "_hasShrinkwrap": false,
+  "_id": "coins-shared-utils@1.0.0",
+  "_inCache": true,
+  "_location": "/coins-shared-utils",
+  "_nodeVersion": "7.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/coins-shared-utils_1.0.0_1552569930773_0.6091904097373559"
+  },
+  "_npmUser": {
+    "name": "niikhilmohan",
+    "email": "nikhil.g.mohan@outlook.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "coins-shared-utils",
+    "scope": null,
+    "escapedName": "coins-shared-utils",
+    "name": "coins-shared-utils",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/coins-shared-utils/-/coins-shared-utils-1.0.0.tgz",
+  "_shasum": "79bf847eabefa605552e557105355bec211b39bc",
+  "_shrinkwrap": null,
+  "_spec": "coins-shared-utils",
+  "_where": "E:\\Lab\\project\\controllers",
+  "author": {
+    "name": "Nikhil Mohan",
+    "email": "niikhil.mohan@gmail.com"
+  },
+  "dependencies": {},
+  "description": "Provides utilities for Coins",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "79bf847eabefa605552e557105355bec211b39bc",
+    "tarball": "https://registry.npmjs.org/coins-shared-utils/-/coins-shared-utils-1.0.0.tgz",
+    "integrity": "sha512-V0C6lSRszQ2e0mj4Qoxoodv0nTCPXPQtXfNG79WPGiB9s7UAOT5F7d9wH8FE1DcyCKiFMhY62blN3j4mahqDyw==",
+    "fileCount": 7,
+    "unpackedSize": 4157,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcilZLCRA9TVsSAnZWagAAnpIQAJ84I4nODHddoYCe/zD7\nm5x1f39JJT5DPTIH47xUG2jphKpSOwW+aZj+7xuqtwEgQf13wYQvXPOpwA6T\nE21VjSAh3kq1j6gurJIdpGoq/wtBXDN1IPAelh90ICfhvqHfGggNeCntbi/o\nbOE9Fuz54ndRazV6Cn8Jw4WI9BmT2eI3X2XT8hKRhzMiZZ/Nf88fYvew5358\nH3jdtTTcLC4XU/aiCQ1OHiow6As5md9FUZsqMi0VW8NmsGDM35rw3e9InjHA\n1goghtDd96bp5IXFkbWZqRnwTd4vnojDHA0lNAKC+0/tubSVGeqlZ85tTOo7\n4+jnyoGHlXOC1GykHFaMJxO2n9JsTAAklzp2UcXIoQwOsnVWaUzwhX05bkVC\njIoHCjlvct0M/hHM82skkcxscLcid9pThYGDFhxAoTRoYMz6ax2hwewpBf0O\neQEqJIWptk7p8Z65dmU9cX0e4HyAmia0gnBOfxOXDmaUBQRIxsNFZT5i20Mt\ntZhZULa2d/pk/kNRQb6pXfTmhnnStyPTAkIi6eI5mvq/BwQWgJcGZJW0WrCm\nh7tLWZ5KYRAD6bPvhaHO9ktnho4VxRCzAX+OmhOiO3FgqBrRBRuV80kPr9r7\nKpRS4CBpZaIHkok47APh0qmZLdS3XgYkNgid1Ktj4GWh2ACk+f1QB1mZro05\n5Wg+\r\n=CJtq\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "keywords": [
+    "coins"
+  ],
+  "license": "ISC",
+  "main": "shared.js",
+  "maintainers": [
+    {
+      "name": "niikhilmohan",
+      "email": "nikhil.g.mohan@outlook.com"
+    }
+  ],
+  "name": "coins-shared-utils",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "nothing"
+  },
+  "version": "1.0.1"
+}
