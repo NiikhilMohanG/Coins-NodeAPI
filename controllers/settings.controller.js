@@ -6,7 +6,7 @@ var app = base.CoinsApp;
 
 //Methods
 app.get('/get/appsettings', function (req, res) {
-    res.send(settingsService.GetAppConfig())
+    res.send(settingsService.GetAppConfig());    
 });
 
 //Invoke server method to listen
