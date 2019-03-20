@@ -1,6 +1,6 @@
 //Provides the required authorisation and authentication for the application
 
-var base = require("../libs/shared.js");
+var Coins = require("coins-shared-utils");
 
 var app = base.CoinsApp;
 
