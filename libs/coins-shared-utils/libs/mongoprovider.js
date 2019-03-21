@@ -7,9 +7,9 @@ const Binary = require('mongodb').Binary;
 const GridStore = require('mongodb').GridStore;
 const Grid = require('mongodb').Grid;
 const Code = require('mongodb').Code;
-const fs = require("./libs/file-reader.js");
+const fs = require("./file-reader.js");
 
-const settings = require("./libs/appsettings.js");
+const settings = require("./appsettings.js");
 const uri = settings.dbconnection;
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
