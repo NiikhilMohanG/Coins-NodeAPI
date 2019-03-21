@@ -5,9 +5,10 @@ var dataAppConfigService = require('../data/appsettings.data');
 var AppConfig = {
 
     GetAppConfig: function () {
-        debugger;
-         var t = dataAppConfigService.GetAppConfig();
-         return t;
+        return dataAppConfigService.GetAppConfig().then(function (result) {
+            return result;
+        });
+
     }
 
 };
