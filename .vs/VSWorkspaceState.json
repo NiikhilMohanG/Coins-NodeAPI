@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\business",
-    "\\data",
-    "\\node_modules",
-    "\\node_modules\\coins-shared-utils"
+    "\\user.service",
+    "\\user.service\\controllers"
   ],
-  "SelectedNode": "\\node_modules\\coins-shared-utils\\index.js",
+  "SelectedNode": "\\user.service\\controllers\\settings.controller.js",
   "PreviewInSolutionExplorer": false
 }
