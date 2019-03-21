@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "coins-shared-utils": "^1.1.5",
+    "http": "0.0.0"
+  },
+  "name": "auth.service",
+  "version": "1.0.0",
+  "description": "Authorisation micro service",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Nikhil Mohan <niikhil.mohan@gmail.com>",
+  "license": "ISC"
+}
