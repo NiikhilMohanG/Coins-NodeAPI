@@ -1,13 +1,13 @@
 //Include shared-utils to get the base controller functionalities
-var base = require("coins-shared-utils");
+var Coins = require("coins-shared-utils");
 var settingsService = require("../business/appconfig.business");
 
-var app = base.CoinsApp;
+var router = Coins.Router;
 
 //Methods
-app.get('/get/appsettings', function (req, res) {
-    res.send(settingsService.GetAppConfig());    
+router.get('/appconfig', function (req, res) {
+    res.send(settingsService.GetAppConfig());
 });
 
-//Invoke server method to listen
-base.InvokeServer(app);
+
+module.exports = router;

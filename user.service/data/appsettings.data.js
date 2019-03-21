@@ -6,14 +6,18 @@ var AppConfig = {
     //Methods
     GetAppConfig: function () {
         debugger;
-        base.MongoClient.connect(con => {
-            const collection = base.MongoClient.db(base.Settings.dbname).collection("AppResource");
-            d = collection.find().toArray(function (err, result) {                
-                if (err) throw err;
-                AppConfig.Configs = result;
-                base.MongoClient.close();
-                return result;
+        return new Promise(function (resolve, reject) {
+            base.MongoClient.connect(con => {
+                const collection = base.MongoClient.db(base.Settings.dbname).collection("AppResource");
+                d = collection.find().toArray(function (err, result) {
+                    if (err) reject(err);
+                    else {
+                        base.MongoClient.close();
+                        resolve(result);
+                    }
+                });
             });
+
         });
     },
 
