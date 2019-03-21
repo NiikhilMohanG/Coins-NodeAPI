@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\user.service",
     "\\user.service\\controllers"
   ],
-  "SelectedNode": "\\user.service\\controllers\\settings.controller.js",
+  "SelectedNode": "\\user.service",
   "PreviewInSolutionExplorer": false
 }
