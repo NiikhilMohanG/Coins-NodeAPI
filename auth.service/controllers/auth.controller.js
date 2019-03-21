@@ -2,14 +2,20 @@
 
 var Coins = require("coins-shared-utils");
 
-var app = base.CoinsApp;
+var router = Coins.Router;
+
+var deferred = require('q');
 
 //register user
-app.post('/register', function (request, response) {
-
+router.get('/register', function (request, response) {
+    response.send("register method");
 });
 
 //login user
-app.post('/login', function (request, response) {
+router.post('/login', function (request, response) {
 
 });
+
+
+
+module.exports = router;
