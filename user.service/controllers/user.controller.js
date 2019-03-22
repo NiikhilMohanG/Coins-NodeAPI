@@ -1,22 +1,30 @@
 //Include shared-utils to get the base controller functionalities
-var base = require("coins-shared-utils");
-var app = base.CoinsApp;
-
+var Coins = require("coins-shared-utils");
+var router = Coins.Router;
+var pug = require('pug');
 //Methods
+
+// router.get('/', function (req, res) {
+//     res.render('index');
+// });
 
 //Get the userdetails using id
 //Uri Params{Id}
 //Returns user details
-app.get('/user/details', function (req, res) {
+router.get('/details', function (req, res) {
     //get method
     var userId = req.query.id;
     res.send(userId);
 });
 
-app.post('url', function (req, res) {
+router.post('url', function (req, res) {
     //post method
 });
 
+router.get('/init', function (req, res) {
+    //get method
+    var userId = req.query.id;
+    res.send("user service initialised");
+});
 
-//Create server
-base.InvokeServer(app);
+module.exports = router;

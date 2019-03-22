@@ -22,7 +22,12 @@ base.Router = Express.Router();
 //enabling CORS
 base.App.use(Cors());
 
-
+/**
+ * Invoke the index page
+ */
+base.GetHomePage = function (_app, _pagetitle) {
+  _app.get('/', function (req, res) { res.render('index', { title: _pagetitle }) });
+};
 
 base.Listen = function (_app) {
   /**
