@@ -1,8 +1,12 @@
 //Include shared-utils to get the base controller functionalities
 var Coins = require("coins-shared-utils");
 var router = Coins.Router;
-
+var pug = require('pug');
 //Methods
+
+// router.get('/', function (req, res) {
+//     res.render('index');
+// });
 
 //Get the userdetails using id
 //Uri Params{Id}

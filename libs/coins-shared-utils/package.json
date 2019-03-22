@@ -1,15 +1,19 @@
 {
   "name": "coins-shared-utils",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "description": "Provides functionality for coins application as a base class",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [
     "coins",
     "coins-shared"
   ],
   "author": "Nikhil Mohan <niikhil.mohan@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "http": "0.0.0",
+    "mongodb": "^3.1.13",
+    "pug": "^2.0.3"
+  }
 }
