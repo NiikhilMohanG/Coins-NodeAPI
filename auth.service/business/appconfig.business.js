@@ -4,9 +4,9 @@ var dataAppConfigService = require('../data/appsettings.data');
 
 var AppConfig = {
 
-    GetAppConfig: function () {
-        debugger;
+    GetAppConfig: async function () {
          var t = dataAppConfigService.GetAppConfig();
+         console.log(t);
          return t;
     }
 

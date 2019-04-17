@@ -6,7 +6,8 @@ var router = Coins.Router;
 
 //Methods
 router.get('/appconfig', function (req, res) {
-    res.send(settingsService.GetAppConfig());
+    settingsService.GetAppConfig().then(data => res.send(data)).catch(err => res.send(err));
+    //res.send(settingsService.GetAppConfig());
 });
 
 

@@ -1,20 +1,17 @@
 //Include shared-utils to get the base controller functionalities
-var Coins = require("coins-shared-utils");
+const Coins = require("coins-shared-utils");
+const business = require('../business/user.business');
 var router = Coins.Router;
-var pug = require('pug');
-//Methods
 
-// router.get('/', function (req, res) {
-//     res.render('index');
-// });
 
 //Get the userdetails using id
 //Uri Params{Id}
 //Returns user details
-router.get('/details', function (req, res) {
-    //get method
-    var userId = req.query.id;
-    res.send(userId);
+router.get('/all', function (req, res) {
+    business.GetAllUsers().then(users => res.send(users)).catch(e => {
+        res.send(e);
+    });
+
 });
 
 router.post('url', function (req, res) {

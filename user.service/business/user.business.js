@@ -1,10 +1,12 @@
 
-var User = require("./../contracts/user");
-var UserDataService = require("./../data/user.data");
+//var User = require("./../contracts/user");
+const DataService = require("./../data/user.data");
 
 var UserBusiness = {
-    GetUserDetails:function(_userid){
-        return UserDataService.
+    GetAllUsers: async function () {
+        return await DataService.User.GetAllUsers();       
     }
 
-}
+};
+
+module.exports = UserBusiness;

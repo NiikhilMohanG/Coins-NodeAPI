@@ -6,14 +6,15 @@ var server; //server variable
 var base = {};
 
 //Dependencies
-var Express = require('express');
-var http = require('http');
-var Cors = require('cors');
+const Express = require('express');
+const http = require('http');
+const Cors = require('cors');
 
 //Custom Dependencies
 base.FileSys = require('./libs/file-reader.js');
 base.Settings = require('./libs/appsettings.js');
 base.MongoProvider = require('./libs/mongoprovider.js');
+base.PGManager = require('./libs/pgmanager');
 
 //Properties
 base.App = Express();

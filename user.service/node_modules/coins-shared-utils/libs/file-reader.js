@@ -1,6 +1,6 @@
 //This module provides the wrapper to perform file based activities
 
-var fs = require('fs');
+const fs = require('fs');
 
 var fr = module.exports = {};
 

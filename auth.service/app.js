@@ -1,14 +1,22 @@
 
-var Coins = require('coins-shared-utils');
+const Coins = require('coins-shared-utils');
+const path = require('path');
 
-var app = Coins.App;
+const app = Coins.App;
 
 //Define routes
-var auth = require('./controllers/auth.controller')
-var settings = require('./controllers/settings.controller');
+const auth = require('./controllers/auth.controller')
+const settings = require('./controllers/settings.controller');
 
 //Set routes
 app.use('/auth', auth);
 app.use('/settings', settings);
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
+
+Coins.GetHomePage(app,"Auth.Service");
 
 Coins.Listen(app);

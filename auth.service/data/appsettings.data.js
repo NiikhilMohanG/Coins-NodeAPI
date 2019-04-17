@@ -4,15 +4,14 @@ var base = require("./base.data");
 var AppConfig = {
 
     //Methods
-    GetAppConfig: function () {
-        debugger;
-        base.MongoClient.connect(con => {
+    GetAppConfig: async function () {
+        base.MongoClient.connect(err => {
+            var query = { Key: _key };
             const collection = base.MongoClient.db(base.Settings.dbname).collection("AppResource");
-            d = collection.find().toArray(function (err, result) {                
+            d = collection.find(query).toArray(function (err, result) {
+                base.MongoProvider.Client.close();
                 if (err) throw err;
-                AppConfig.Configs = result;
-                base.MongoClient.close();
-                return result;
+                Configs = result;
             });
         });
     },
@@ -27,6 +26,7 @@ var AppConfig = {
                 Configs = result;
             });
         });
+        
     }
 };
 

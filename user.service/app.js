@@ -15,6 +15,6 @@ app.set('view engine', 'pug');
 app.use('/user', userroutes);
 
 
-Coins.Init(app,"User.Service");
+Coins.GetHomePage(app,"User.Service");
 
 Coins.Listen(app);
